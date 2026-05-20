@@ -1,0 +1,16 @@
+{
+  "name": "snake-io",
+  "main": "worker/index.js",
+  "cloudFunctions": {
+    "nodejs": {
+      "maxDuration": 5
+    }
+  },
+  "bindings": [
+    {
+      "type": "kv",
+      "name": "GAME_STATE_KV",
+      "id": "你的EdgeOne_KV_命名空间ID"
+    }
+  ]
+}
